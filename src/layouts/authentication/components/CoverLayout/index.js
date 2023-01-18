@@ -33,14 +33,14 @@ import Footer from "layouts/authentication/components/Footer";
 function CoverLayout({ color, header, title, description, image, top, children }) {
   return (
     <PageLayout background="white">
-      <DefaultNavbar
+      {/* <DefaultNavbar
         action={{
           type: "external",
           route: "https://appseed.us/product/node-js-react-soft-dashboard",
-          label: "free download",
+          label: "free download123",
           color: "dark",
         }}
-      />
+      /> */}
       <Grid
         container
         justifyContent="center"

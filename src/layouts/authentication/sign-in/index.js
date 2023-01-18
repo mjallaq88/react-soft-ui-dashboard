@@ -36,6 +36,8 @@ import curved9 from "assets/images/curved-images/curved-6.jpg";
 import AuthApi from "../../../api/auth";
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from "../../../auth-context/auth.context";
+import Socials from "layouts/authentication/components/Socials";
+import Separator from "layouts/authentication/components/Separator";
 
 function SignIn() {
   const navigate = useNavigate();
@@ -91,6 +93,8 @@ function SignIn() {
       description="Enter your email and password to sign in"
       image={curved9}
     >
+      <Socials></Socials>
+      <Separator/>
       {user && user.token ? (
       <div>
         <h3 style={{ textAlign: "center" }}>You are already signed in.</h3>
